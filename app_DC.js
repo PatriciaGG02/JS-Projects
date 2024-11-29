@@ -111,7 +111,7 @@ patientL();
  * necesaria del horario de la cita junto el nombre del paciente previamente registrado
  * 
  * @param {} dateQ Fecha y hora de la cita
- * @param {string} patientDNI DNI del paciente al que se la asociara la cita
+ * @param {string} patientDNI DNI del paciente al que se la asociará la cita
  * @param {string} observations Observaciones
  */
 class Quote{
