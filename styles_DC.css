@@ -1,0 +1,145 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+
+}
+
+/* Estilos header */
+header {  
+    background-color: rgb(6, 215, 223);
+    padding: 1px;
+    padding-left: auto;
+}
+
+#date {
+    text-align: right;
+    margin-top: 40px;
+}
+
+#title, #subtitle{
+    text-align: center;
+}
+
+/* Estilos imágenes */
+#firstL {
+    float: left;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#secondL{
+    float: right;
+    max-width: 200px;
+    max-height: 130px;
+}
+
+.tableWImg {
+  display: flex;  
+  align-items: flex-start;
+  gap: 20px
+
+}
+#icon{
+    
+    position: right;
+    max-width: 350px;
+    max-height: 300px;
+}
+
+/* Estilos main */
+main {
+    color: black;
+}
+
+#patientI, #completed, #plan{
+    float: left;
+    max-width: 40px;
+    max-height: 45px;
+}
+
+/* Estilos del formulario de pacientes */
+#patients{
+    max-width: 1400px;
+    margin: 0%;
+    padding: 20px;
+    border: 1px solid #064e4e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(1, 39, 51, 0.1);
+}
+
+#nameP, #surNP, #DNIP, #phoneP, #birthdateP {
+    margin-bottom: 8px;
+    font-weight: bold;   
+}
+
+#patientB, #create, #deleteB, #modifyB {
+    width: 80px;
+    height: 50px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: small;
+    background-color: #83c0d3;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#patientB:hover, #create:hover, #deleteB:hover, #modifyB:hover {
+    background-color: #42ac9d;
+}
+
+#quotes{
+    max-width: 950px;
+    margin: 0%;
+    padding: 20px;
+    border: 1px solid #064e4e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(1, 39, 51, 0.1);
+}
+
+/* Estilos de la tabla de las citas */
+.quoteTable {
+    width: 100px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+.quoteTable th, .quoteTable td {
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.quoteTable th {
+    background-color: rgb(6, 215, 223);
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.quoteTable tr:hover {
+    background-color: rgb(243, 239, 240);
+}
+
+.quoteTable .dataQuotes td {
+    text-align: center;
+    color: black;
+    font-style: italic;
+}
+
+.quoteTable td{
+    padding: 8px;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: aliceblue;
+}

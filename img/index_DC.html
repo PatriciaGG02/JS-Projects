@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Clinic</title>
+    <link rel="stylesheet" type="text/css" href="styles_DC.css"  media="">
+</head>
+<body>
+    <header>
+        <image id="firstL" src="Logo.png"></image>
+        <image id="secondL" src="Logo2.png"></image>
+        <h1 id="title">Mental Clinic</h1>
+        <h3 id="subtitle">Clínica San Judas</h3>
+        <p id="date"><span >Fecha y hora</span></p>  
+    </header>
+
+    <main>
+        <div>
+           <p>
+                <p>
+                <img id="patientI" src="Paciente.png">
+                <h1><i>Datos del paciente</i></h1>
+                </p>
+                <form id="patients">
+                <label id="nameP" for="name">Nombre</label>
+                <input id="name" type="text" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ/s]" required oninvalid="this.setCustomValidity('Debes añadir el nombre del paciente')"  oninput=" ">
+                <label id="surNP" for="surnames">Apellidos</label>
+                <input id="surnames" type="text" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ/s]+" required oninvalid="this.setCustomValidity('Debes añadir los apellidos del paciente')" oninput=" ">
+                <label  id="DNIP" for="DNI">DNI</label>
+                <input id="DNI" type="text" pattern="\d{8}[A-Z]+" required oninvalid="this.setCustomValidity('Debes añadir un formato de DNI conforme 8 números y una letra mayúscula')" oninput=" " >
+                <label id="phoneP" for="phone">Teléfono</label>
+                <input id="phone" type="text" pattern="\d{3}\d{3}\d{3}" required oninvalid="this.setCustomValidity('Debes añadir un número de teléfono sin prefijo')" oninput=" " >
+                <lable id="birthdateP" for="birthdate">Fecha de nacimiento</lable>
+                <input id="birthdate" type="date" required>
+
+                <button id="patientB" type="submit">Añadir paciente</button>
+                </form>
+           </p>
+
+           <p> 
+                <p>
+                <img id="completed" src="Rellenar.png">
+                <h1><i>Añadir cita</i></h1> 
+                </p>
+                <form id="quotes">
+                <label for="dateQ"><b>Fecha</b></label>
+                <input id="dateQ" type="datetime-local" required required oninvalid="this.setCustomValidity('Debe añadir un horario para la cita')" oninput=" ">
+                <label for="patientDNI"><b>DNI del paciente</b></label>
+                <input id="patientDNI" type="text" pattern="\d{8}[A-Z]" required required oninvalid="this.setCustomValidity('Debes añadir un DNI existente')" oninput=" ">
+                <label for="observations"><b>Observaciones</b></label>
+                <input id="observations" type="text">
+
+                <button id="create" type="submit">Añadir cita</button>
+                </form>
+            </p>
+        </div>
+
+        <div class="quoteT">
+            <p>
+            <img id="plan" src="Agenda.png">
+            <h1><i>Citas agendadas</i></h1>
+            </p>
+            <div class="tableWImg">
+                <table class="quoteTable">
+                    <thead>
+                        <tr>
+                            <th>Nº de orden</th>
+                            <th>Fecha de cita</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>DNI</th>
+                            <th>Teléfono</th>
+                            <th>Observaciones</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataQuotes">
+                        <tr><td colspan="9">No existen citas agendadas</td></tr>
+                    </tbody>               
+                </table><br>
+                <img src="Icon.png" id="icon">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       <div>
+            <h3>Información de contacto</h3>
+            <p>Aven. San Judas Pirineo, nº 23<br>
+                Teléfono:895895895
+            </p>
+        </div> 
+    </footer>
+
+    <script src="app_DC.js"></script>
+    
+</body>
+</html>
