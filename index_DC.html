@@ -30,7 +30,7 @@
                 <label  id="DNIP" for="DNI">DNI</label>
                 <input id="DNI" type="text" pattern="\d{8}[A-Z]+" required oninvalid="this.setCustomValidity('Debes añadir un formato de DNI conforme 8 números y una letra mayúscula')" oninput=" " >
                 <label id="phoneP" for="phone">Teléfono</label>
-                <input id="phone" type="text" pattern="\d{3}\d{3}\d{3}" required oninvalid="this.setCustomValidity('Debes añadir un número de teléfono sin prefijo')" oninput=" " >
+                <input id="phone" type="tel" pattern="\d{3}\d{3}\d{3}" required oninvalid="this.setCustomValidity('Debes añadir un número de teléfono sin prefijo')" oninput=" " >
                 <lable id="birthdateP" for="birthdate">Fecha de nacimiento</lable>
                 <input id="birthdate" type="date" required>
 
